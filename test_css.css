@@ -26,14 +26,19 @@ input
       align-items: center;
       padding-bottom: 20px;
       margin-bottom: 20px;
+      position: fixed;
+      z-index: 10;
+      background-color: #1D2951;
       
 }
 
 .outer
 {
   
-  display: flex;
-  width: 100%;
+  position: relative;
+    display: flex;
+    width: 100%;
+    top: 185px;
 
 }
 #navbar-icon
@@ -80,10 +85,13 @@ input
 
 #navbar-user
 {
- width: 9%;
-  height: 100%;
-   border:1px solid red;
+      width: 9%;
+      height: 100%;
+      border:1px solid red;
       box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-content: center;
 }
 
 #navbar-user-image
@@ -432,6 +440,23 @@ padding-left: 5px;
 {
   width: 100%;
   height: 85%;
+  position: relative;
+}
+
+.play-icon-image
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  visibility: hidden;
+  top: 75px;
+}
+
+#section-3-main-element-1:hover .play-icon-image
+{
+  visibility: visible;
 }
 
 #section-3-main-element-1-image
@@ -456,6 +481,33 @@ padding-left: 5px;
   justify-content: space-around;
   margin-top: 40px;
   margin-bottom: 30px;
+   width: 100%;
+  height: 100px;
+}
+
+#section-4-element
+{
+ 
+  height: 100%;
+  width: 16%;
+  box-sizing: border-box;
+
+}
+
+
+#section-3-main-element-image
+{
+  width: 70%;
+  height: 100%;
+  object-fit: fill;
+ border-radius: 50%;
+}
+
+#section-4-element-con
+{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 #section-5
@@ -484,6 +536,11 @@ padding-left: 5px;
   height: 100%;
 }
 
+#section-5-element-image:hover
+{
+  width:120%;
+  height:120%;
+}
 #section-6
 {
 
